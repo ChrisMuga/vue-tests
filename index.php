@@ -10,7 +10,7 @@
       <div class="alert alert-primary" v-bind:title="name">Hi {{ name }}?</div>
       <ul class="list-group">
         <li class="list-group-item active"> Students </li>
-        <li class="list-group-item" v-for="student in students">{{students}}</li>
+        <li class="list-group-item" v-for="student, index in students"><span class="badge badge-danger">{{index+1}}</span> {{ student.toUpperCase()}}</li>
       </ul>
     </div>
     <!-- col -->
